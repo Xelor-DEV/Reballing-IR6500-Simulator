@@ -12,7 +12,7 @@ public class ArduinoInputHandler : MonoBehaviour
         {
             try
             {
-                arduinoPort = new SerialPort(port, 9600);
+                arduinoPort = new SerialPort("COM3", 9600);
                 arduinoPort.Open();
                 arduinoPort.ReadTimeout = 100;
 
